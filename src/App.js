@@ -34,22 +34,13 @@ class App extends React.Component {
       dez: document.getElementById('dez'),
       efectScore: document.getElementsByClassName('box-score')
     })
-    // console.log(this.state.dez)
   }
 
-  hoverEventEnter = (e) => {
-    this.load()
-    // console.log(e.target.attribute)
-    // e.target.setAttribute("class", 'select-pointer')
-  }
-
-  // hoverEventLeave = (e) => {
-  //   // console.log(e.target)
-  //   e.target.setAttribute("class", 'diseble-select-pointer')
+  // hoverEventEnter = (e) => {
+  //   this.load()
   // }
 
   cilckEvent = (e, n) => {
-    // console.log(e , n)
     if (n == 10){
       if (this.state.dez.className == 'diseble-select-pointer'){
         this.setState({
@@ -142,6 +133,7 @@ class App extends React.Component {
         this.state.um.setAttribute("class", 'select-pointer')
       }
       else {
+        this.state.dez.setAttribute("class", 'diseble-select-pointer')
         this.state.nove.setAttribute("class", 'diseble-select-pointer')
         if (this.state.score == 8){
           this.state.oito.setAttribute("class", 'diseble-select-pointer')
@@ -181,6 +173,8 @@ class App extends React.Component {
         this.state.um.setAttribute("class", 'select-pointer')
       }
       else {
+        this.state.dez.setAttribute("class", 'diseble-select-pointer')
+        this.state.nove.setAttribute("class", 'diseble-select-pointer')
         this.state.oito.setAttribute("class", 'diseble-select-pointer')
         if (this.state.score == 7){ 
           this.state.sete.setAttribute("class", 'diseble-select-pointer')
@@ -218,6 +212,9 @@ class App extends React.Component {
         this.state.um.setAttribute("class", 'select-pointer')
       }
       else {
+        this.state.dez.setAttribute("class", 'diseble-select-pointer')
+        this.state.nove.setAttribute("class", 'diseble-select-pointer')
+        this.state.oito.setAttribute("class", 'diseble-select-pointer')
         this.state.sete.setAttribute("class", 'diseble-select-pointer')
         if (this.state.score == 6){ 
           this.state.seis.setAttribute("class", 'diseble-select-pointer')
@@ -253,6 +250,10 @@ class App extends React.Component {
         this.state.um.setAttribute("class", 'select-pointer')
       }
       else {
+        this.state.dez.setAttribute("class", 'diseble-select-pointer')
+        this.state.nove.setAttribute("class", 'diseble-select-pointer')
+        this.state.oito.setAttribute("class", 'diseble-select-pointer')
+        this.state.sete.setAttribute("class", 'diseble-select-pointer')
         this.state.seis.setAttribute("class", 'diseble-select-pointer')
         if (this.state.score == 5){ 
           this.state.cinco.setAttribute("class", 'diseble-select-pointer')
@@ -286,6 +287,11 @@ class App extends React.Component {
         this.state.um.setAttribute("class", 'select-pointer')
       }
       else {
+        this.state.dez.setAttribute("class", 'diseble-select-pointer')
+        this.state.nove.setAttribute("class", 'diseble-select-pointer')
+        this.state.oito.setAttribute("class", 'diseble-select-pointer')
+        this.state.sete.setAttribute("class", 'diseble-select-pointer')
+        this.state.seis.setAttribute("class", 'diseble-select-pointer')
         this.state.cinco.setAttribute("class", 'diseble-select-pointer')
         if (this.state.score == 4){ 
           this.state.quatro.setAttribute("class", 'diseble-select-pointer')
@@ -317,6 +323,12 @@ class App extends React.Component {
         this.state.um.setAttribute("class", 'select-pointer')
       }
       else {
+        this.state.dez.setAttribute("class", 'diseble-select-pointer')
+        this.state.nove.setAttribute("class", 'diseble-select-pointer')
+        this.state.oito.setAttribute("class", 'diseble-select-pointer')
+        this.state.sete.setAttribute("class", 'diseble-select-pointer')
+        this.state.seis.setAttribute("class", 'diseble-select-pointer')
+        this.state.cinco.setAttribute("class", 'diseble-select-pointer')
         this.state.quatro.setAttribute("class", 'diseble-select-pointer')
         if (this.state.score == 3){ 
           this.state.tres.setAttribute("class", 'diseble-select-pointer')
@@ -346,6 +358,13 @@ class App extends React.Component {
         this.state.um.setAttribute("class", 'select-pointer')
       }
       else {
+        this.state.dez.setAttribute("class", 'diseble-select-pointer')
+        this.state.nove.setAttribute("class", 'diseble-select-pointer')
+        this.state.oito.setAttribute("class", 'diseble-select-pointer')
+        this.state.sete.setAttribute("class", 'diseble-select-pointer')
+        this.state.seis.setAttribute("class", 'diseble-select-pointer')
+        this.state.cinco.setAttribute("class", 'diseble-select-pointer')
+        this.state.quatro.setAttribute("class", 'diseble-select-pointer')
         this.state.tres.setAttribute("class", 'diseble-select-pointer')
         if (this.state.score == 2){ 
           this.state.dois.setAttribute("class", 'diseble-select-pointer')
@@ -373,6 +392,14 @@ class App extends React.Component {
         this.state.um.setAttribute("class", 'select-pointer')
       }
       else {
+        this.state.dez.setAttribute("class", 'diseble-select-pointer')
+        this.state.nove.setAttribute("class", 'diseble-select-pointer')
+        this.state.oito.setAttribute("class", 'diseble-select-pointer')
+        this.state.sete.setAttribute("class", 'diseble-select-pointer')
+        this.state.seis.setAttribute("class", 'diseble-select-pointer')
+        this.state.cinco.setAttribute("class", 'diseble-select-pointer')
+        this.state.quatro.setAttribute("class", 'diseble-select-pointer')
+        this.state.tres.setAttribute("class", 'diseble-select-pointer')
         this.state.dois.setAttribute("class", 'diseble-select-pointer')
         if (this.state.score == 1){ 
           this.state.um.setAttribute("class", 'diseble-select-pointer')
@@ -389,25 +416,12 @@ class App extends React.Component {
         }
       }
     }
-
-    // if (this.state.score == 10){
-    //   this.state.efectScore.style.color = "green"
-
-    // }
-    // switch(this.state.score){
-    //   case '10':
-    // }
-    // else {
-    //   e.target.setAttribute("class", 'diseble-select-pointer')
-    // }
-    console.log(this.state.score)
-    // console.log(this.state.efectScore.style.color)
   }
 
   render(){
     return (
       <div className="App">
-        <div className="nps-container" onMouseEnter={()=>this.hoverEventEnter()}>
+        <div className="nps-container" onMouseEnter={()=>this.load()}>
           <div className="box-score"> 
             <p className="value-score">1</p>
             <div className="score" onClick={(e) => this.cilckEvent(e,1)}><div id="um" className="diseble-select-pointer"></div></div>
